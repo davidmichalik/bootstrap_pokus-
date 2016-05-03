@@ -15,7 +15,6 @@
                 cursor: pointer;
             }
             .editrow {
-                display: none;
                 cursor: pointer;
             }
             .highlightrow {
@@ -285,7 +284,7 @@ $(document).ready(function() {
                                                             <div class="highlightrow glyphicon glyphicon-bold"></div>
                                                         </td>
 						</tr>
-                                                <tr>
+                                                <tr id="newform">
                                                         <td><input type="text" id="newname" value="Kubko"></td>
 							<td><input type="text" id="newage" value="15"></td>
 							<td><input type="text" id="newsalary" value="10"></td><td>
@@ -318,8 +317,24 @@ $(document).ready(function() {
                var $plat = document.getElementById("newsalary").value;
                
                 $('table tr:last').after("<tr><td>"+$kto+"</td><td>"+$vek+"</td><td>"+$plat+"</td><td><div class=\"deleterow glyphicon glyphicon-remove\"></div><div class=\"editrow glyphicon glyphicon-edit\"></div><div class=\"highlightrow glyphicon glyphicon-bold\"></div></td></tr>");
+
+                $(document.getElementById("newform")).removeClass("success");
             });
             
+            $(".editrow").on("click", function(){
+               var $row = $($(this).parent('td')).parent('tr');
+               var tds = $row.children('td');
+               
+               document.getElementById("newname").value = tds[0].innerHTML;
+               document.getElementById("newage").value = tds[1].innerHTML;
+               document.getElementById("newsalary").value = tds[2].innerHTML;
+               
+               $(document.getElementById("newform")).addClass("success");
+               
+                $row.fadeOut(1000, function(){
+                    $(this).remove();
+                });
+            });
             
         </script>
 </body>
