@@ -285,6 +285,13 @@ $(document).ready(function() {
                                                             <div class="highlightrow glyphicon glyphicon-bold"></div>
                                                         </td>
 						</tr>
+                                                <tr>
+                                                        <td><input type="text" id="newname" value="Kubko"></td>
+							<td><input type="text" id="newage" value="15"></td>
+							<td><input type="text" id="newsalary" value="10"></td><td>
+                                                            <input type="button" id="newsubmit" value="Vložiť">
+                                                        </td>
+                                                </tr>
 					</tbody>
 				</table>
 			</div>
@@ -304,7 +311,14 @@ $(document).ready(function() {
                 var $row = $($(this).parent('td')).parent('tr');
                 $row.addClass("success");
             });
-    });
+            
+            $("#newsubmit").on("click", function(){
+               var $kto = document.getElementById("newname").value;
+               var $vek = document.getElementById("newage").value;
+               var $plat = document.getElementById("newsalary").value;
+               
+                $('table tr:last').after("<tr><td>"+$kto+"</td><td>"+$vek+"</td><td>"+$plat+"</td><td><div class=\"deleterow glyphicon glyphicon-remove\"></div><div class=\"editrow glyphicon glyphicon-edit\"></div><div class=\"highlightrow glyphicon glyphicon-bold\"></div></td></tr>");
+            });
             
             
         </script>
