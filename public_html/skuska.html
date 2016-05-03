@@ -11,12 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css">
 	<style type="text/css" class="init">
-	
+            .deleterow {
+                cursor: pointer;
+            }
+            .editrow {
+                cursor: pointer;
+            }
+            .highlightrow {
+                cursor: pointer;
+            }
 	</style>
-	<script type="text/javascript" src="/media/js/site.js?_=1d77a229585e4e41d9224d51ea376cc6">
-	</script>
-	<script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap.html" async>
-	</script>
 	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.0.min.js">
 	</script>
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js">
@@ -41,6 +45,7 @@ $(document).ready(function() {
 							<th>Meno</th>
 							<th>Vek</th>
 							<th>Plat</th>
+                                                        <th></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -48,127 +53,248 @@ $(document).ready(function() {
 							<td>Adam</td>
 							<td>61</td>
 							<td>320</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Fero</td>
 							<td>35</td>
 							<td>1500</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Jozo</td>
                                                         <td>18</td>
 							<td>920</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Juro</td>
 							<td>22</td>
 							<td>3200</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Majka</td>
 							<td>33</td>
 							<td>750</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Alfonz</td>
 							<td>50</td>
 							<td>500</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
                                                 <tr>
 							<td>Adam</td>
 							<td>61</td>
 							<td>320</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Fero</td>
 							<td>35</td>
 							<td>1500</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Jozo</td>
                                                         <td>18</td>
 							<td>920</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Juro</td>
 							<td>22</td>
 							<td>3200</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Majka</td>
 							<td>33</td>
 							<td>750</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Alfonz</td>
 							<td>50</td>
 							<td>500</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
                                                 <tr>
 							<td>Adam</td>
 							<td>61</td>
 							<td>320</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Fero</td>
 							<td>35</td>
 							<td>1500</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Jozo</td>
                                                         <td>18</td>
 							<td>920</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Juro</td>
 							<td>22</td>
 							<td>3200</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Majka</td>
 							<td>33</td>
 							<td>750</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Alfonz</td>
 							<td>50</td>
-							<td>500</td>
+							<td>500</td><td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
                                                 <tr>
 							<td>Adam</td>
 							<td>61</td>
 							<td>320</td>
+                                                        <td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Fero</td>
 							<td>35</td>
-							<td>1500</td>
+							<td>1500</td><td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Jozo</td>
                                                         <td>18</td>
-							<td>920</td>
+							<td>920</td><td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Juro</td>
 							<td>22</td>
-							<td>3200</td>
+							<td>3200</td><td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Majka</td>
 							<td>33</td>
-							<td>750</td>
+							<td>750</td><td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 						<tr>
 							<td>Alfonz</td>
 							<td>50</td>
-							<td>500</td>
+							<td>500</td><td>
+                                                            <div class="deleterow glyphicon glyphicon-remove"></div>
+                                                            <div class="editrow glyphicon glyphicon-edit"></div>
+                                                            <div class="highlightrow glyphicon glyphicon-bold"></div>
+                                                        </td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
-	
+	<script>
+            $(".deleterow").on("click", function(){
+                var $killrow = $($(this).parent('td')).parent('tr');
+                    $killrow.addClass("danger");
+                $killrow.fadeOut(2000, function(){
+                    $(this).remove();
+            });});
+        </script>
 </body>
 </html>
