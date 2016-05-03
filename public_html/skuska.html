@@ -295,6 +295,11 @@ $(document).ready(function() {
                 $killrow.fadeOut(2000, function(){
                     $(this).remove();
             });});
+        
+            $(".highlightrow").on("click", function(){
+                var $row = $($(this).parent('td')).parent('tr');
+                $row.addClass("success");
+            });
         </script>
 </body>
 </html>
