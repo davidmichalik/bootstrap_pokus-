@@ -15,6 +15,7 @@
                 cursor: pointer;
             }
             .editrow {
+                display: none;
                 cursor: pointer;
             }
             .highlightrow {
@@ -36,7 +37,8 @@ $(document).ready(function() {
 	</script>
 </head>
 <body class="wide comments example dt-example-bootstrap">
-	<div class="fw-container">
+
+      <div class="fw-container">
 		<div class="fw-body">
 			<div class="content">
 				<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -288,6 +290,8 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</div>
+    
+    
 	<script>
             $(".deleterow").on("click", function(){
                 var $killrow = $($(this).parent('td')).parent('tr');
@@ -300,6 +304,9 @@ $(document).ready(function() {
                 var $row = $($(this).parent('td')).parent('tr');
                 $row.addClass("success");
             });
+    });
+            
+            
         </script>
 </body>
 </html>
